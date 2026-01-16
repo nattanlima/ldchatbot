@@ -2,32 +2,33 @@
 <html lang="pt-BR" class="scroll-smooth">
 <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17871186771"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17871186771"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-  gtag('config', 'AW-17871186771');
-</script>
+      gtag('config', 'AW-17871186771');
+    </script>
+
     <!-- Event snippet for Visualização de página conversion page
-In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-<script>
-function gtag_report_conversion(url) {
-  var callback = function () {
-    if (typeof(url) != 'undefined') {
-      window.location = url;
+    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-17871186771/r2OwCMLE6-EbENPW0slC',
+          'value': 1.0,
+          'currency': 'BRL',
+          'event_callback': callback
+      });
+      return false;
     }
-  };
-  gtag('event', 'conversion', {
-      'send_to': 'AW-17871186771/r2OwCMLE6-EbENPW0slC',
-      'value': 1.0,
-      'currency': 'BRL',
-      'event_callback': callback
-  });
-  return false;
-}
-</script>
+    </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,9 +37,6 @@ function gtag_report_conversion(url) {
     <meta name="description" content="Evite bloqueios no WhatsApp. Migre para API Oficial da Meta com tecnologia Coex. Mantenha seu número seguro, verificado e acesse pelo celular.">
     <meta name="keywords" content="api oficial whatsapp, banimento whatsapp, recuperar numero whatsapp, coex whatsapp, api não oficial risco, chatbot seguro">
     
-    <!-- GESTOR DE TRÁFEGO: Espaço para Google Tag Manager / Pixel do Facebook -->
-    <!-- <script>(function(w,d,s,l,i){...})(window,document,'script','dataLayer','GTM-XXXXXX');</script> -->
-
     <!-- Favicons -->
     <link rel="icon" type="image/png" sizes="32x32" href="https://raw.githubusercontent.com/nattanlima/meu-crm-pwa/main/icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="https://raw.githubusercontent.com/nattanlima/meu-crm-pwa/main/icons/favicon-16x16.png">
@@ -180,9 +178,6 @@ function gtag_report_conversion(url) {
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans antialiased overflow-x-hidden selection:bg-brand-success selection:text-white pb-20 md:pb-0">
     <!-- pb-20 adicionado para não cobrir conteúdo com o Sticky Footer no Mobile -->
-
-    <!-- GTM Body (No-Script) Placeholder -->
-    <!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> -->
 
     <!-- Header -->
     <header class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-200 transition-all duration-300">
@@ -750,7 +745,7 @@ function gtag_report_conversion(url) {
                         <li class="flex gap-3"><i class="fa-solid fa-check text-brand-success"></i> Onboarding Ilimitado</li>
                         <li class="flex gap-3"><i class="fa-solid fa-check text-brand-success"></i> App Android & iOS Web</li>
                     </ul>
-                    <a href="https://wa.me/5524992592320?text=Quero%20contratar%20o%20Plano%20Essencial" class="block w-full py-3 rounded-xl border border-indigo-500 text-indigo-400 font-bold text-center hover:bg-indigo-500 hover:text-white transition-all">
+                    <a onclick="return gtag_report_conversion('https://wa.me/5524992592320?text=Quero%20contratar%20o%20Plano%20Essencial');" href="https://wa.me/5524992592320?text=Quero%20contratar%20o%20Plano%20Essencial" class="block w-full py-3 rounded-xl border border-indigo-500 text-indigo-400 font-bold text-center hover:bg-indigo-500 hover:text-white transition-all">
                         Blindar meu Número
                     </a>
                 </div>
@@ -778,7 +773,7 @@ function gtag_report_conversion(url) {
                         <li class="flex gap-3"><i class="fa-solid fa-check text-brand-success"></i> Integração Externa</li>
                         <li class="flex gap-3"><i class="fa-solid fa-check text-brand-success"></i> Suporte Prioritário</li>
                     </ul>
-                    <a href="https://wa.me/5524992592320?text=Quero%20contratar%20o%20Plano%20Integrador" class="block w-full py-4 rounded-xl bg-brand-primary text-white font-bold text-center hover:bg-indigo-500 transition-all shadow-lg shadow-indigo-900">
+                    <a onclick="return gtag_report_conversion('https://wa.me/5524992592320?text=Quero%20contratar%20o%20Plano%20Integrador');" href="https://wa.me/5524992592320?text=Quero%20contratar%20o%20Plano%20Integrador" class="block w-full py-4 rounded-xl bg-brand-primary text-white font-bold text-center hover:bg-indigo-500 transition-all shadow-lg shadow-indigo-900">
                         Migrar para API Oficial
                     </a>
                 </div>
@@ -804,7 +799,7 @@ function gtag_report_conversion(url) {
                         <li class="flex gap-3"><i class="fa-solid fa-check text-purple-400"></i> Análise de Sentimento</li>
                         <li class="flex gap-3"><i class="fa-solid fa-check text-purple-400"></i> *Tokens pagos à parte</li>
                     </ul>
-                    <a href="https://wa.me/5524992592320?text=Quero%20contratar%20o%20Plano%20IA%20Power" class="block w-full py-3 rounded-xl border border-purple-500 text-purple-400 font-bold text-center hover:bg-purple-600 hover:text-white transition-all">
+                    <a onclick="return gtag_report_conversion('https://wa.me/5524992592320?text=Quero%20contratar%20o%20Plano%20IA%20Power');" href="https://wa.me/5524992592320?text=Quero%20contratar%20o%20Plano%20IA%20Power" class="block w-full py-3 rounded-xl border border-purple-500 text-purple-400 font-bold text-center hover:bg-purple-600 hover:text-white transition-all">
                         Automatizar Agora
                     </a>
                 </div>
@@ -912,7 +907,7 @@ function gtag_report_conversion(url) {
     </footer>
 
     <!-- Floating WhatsApp Button (Standard Brazilian UX) -->
-    <a href="https://wa.me/5524992592320?text=Olá,%20vi%20o%20site%20e%20quero%20tirar%20dúvidas%20sobre%20a%20API%20Oficial" class="fixed bottom-24 right-4 md:bottom-8 md:right-8 z-50 bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform cursor-pointer animate-pulse-slow">
+    <a onclick="return gtag_report_conversion('https://wa.me/5524992592320?text=Olá,%20vi%20o%20site%20e%20quero%20tirar%20dúvidas%20sobre%20a%20API%20Oficial');" href="https://wa.me/5524992592320?text=Olá,%20vi%20o%20site%20e%20quero%20tirar%20dúvidas%20sobre%20a%20API%20Oficial" class="fixed bottom-24 right-4 md:bottom-8 md:right-8 z-50 bg-[#25D366] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform cursor-pointer animate-pulse-slow">
         <i class="fa-brands fa-whatsapp text-3xl"></i>
     </a>
 
