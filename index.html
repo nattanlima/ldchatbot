@@ -816,8 +816,13 @@
 
     <!-- Scheduler Modal -->
     <div id="scheduler-modal" class="modal fixed inset-0 z-[100] flex items-center justify-center p-4">
+        <!-- Fundo escuro que fecha ao clicar -->
         <div class="absolute inset-0 bg-slate-900/80 backdrop-blur-sm" onclick="toggleScheduler()"></div>
-        <div class="modal-content relative bg-white w-full max-w-4xl h-[80vh] rounded-2xl shadow-2xl overflow-hidden flex flex-col">
+        
+        <!-- A Janela Branca -->
+        <div class="modal-content relative bg-white w-full max-w-4xl h-[85vh] rounded-2xl shadow-2xl overflow-hidden flex flex-col">
+            
+            <!-- Cabeçalho do Modal -->
             <div class="flex justify-between items-center p-4 border-b border-slate-200 bg-slate-50">
                 <h3 class="font-bold text-slate-800 flex items-center gap-2">
                     <i data-lucide="calendar-days" class="w-5 h-5 text-brand-primary"></i>
@@ -827,8 +832,14 @@
                     <i data-lucide="x" class="w-6 h-6"></i>
                 </button>
             </div>
-            <div class="flex-1 bg-slate-100 relative">
-                <iframe src="https://calendar.app.google/eEj1gEzBJ6121eAu7" class="w-full h-full border-0" title="Agendamento"></iframe>
+
+            <!-- Área da Agenda (Iframe Correto) -->
+            <div class="flex-1 bg-white relative overflow-hidden">
+                <iframe 
+                    src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3qHe5tUeKIoZLpnE6YKD4xmqlMe-dPR5R5f75UwUKM0jeYfcVCXuuR-io1WC0OQejQPG3J88nv?gv=true" 
+                    class="w-full h-full border-0"
+                    allowfullscreen>
+                </iframe>
             </div>
         </div>
     </div>
@@ -969,7 +980,7 @@
                 ai_feat_1_title: "Copiloto de Ventas", ai_feat_1_desc: "Mientras tu agente habla, la IA analiza el contexto y sugiere productos complementarios (Cross-sell).",
                 ai_tag_1: "Cliente Insatisfecho", ai_tag_2: "Interés: Plan Anual",
                 ai_feat_2_title: "Clasificación Automática", ai_feat_2_desc: "La IA lee las conversaciones y aplica etiquetas (tags) automáticamente. Sepa quién está \"Caliente\" o \"Reclamando\".",
-                ai_feat_3_badge: "Atendiendo 24/7/365", ai_feat_3_title: "Atención Humanizada", ai_feat_3_desc: "Olvida los robots fríos. Nuestra IA conversa naturalmente, aclara dudas, agenda reuniones y califica el lead.",
+                ai_feat_3_badge: "Atendendo 24/7/365", ai_feat_3_title: "Atención Humanizada", ai_feat_3_desc: "Olvida los robots fríos. Nuestra IA conversa naturalmente, aclara dudas, agenda reuniões y califica el lead.",
 
                 calc_warning: "<strong>¿Cuánto cuesta perder tu número hoy?</strong><br>El costo de la API Oficial es ínfimo comparado al perjuicio de tener tu operación parada por un bloqueo. Simula abajo y ve que la seguridad cabe en el bolsillo.",
                 calc_title: "Transparencia Total", calc_subtitle: "Costos de Inteligencia Artificial y API Oficial de Meta son variables. Simula abajo.",
@@ -1005,7 +1016,7 @@
                 faq_3_q: "¿Necesito tener CNPJ?", faq_3_a: "Sí, Meta exige un CNPJ activo y un sitio (o página social) para verificar tu empresa y conceder el sello de API Oficial. Nuestro equipo ayuda en todo este proceso de verificación.",
                 faq_4_q: "¿Qué es la tecnología COEX?", faq_4_a: "COEX (Coexistence) es una nueva tecnología de Meta que permite usar la API Oficial y la App de WhatsApp Business en el móvil SIMULTÁNEAMENTE. Antiguamente, al usar API, perdías el acceso en el móvil. Con Prisme, tienes los dos.",
 
-                footer_about: "Conectamos tu empresa al futuro de la atención. Automatización, IA y Humanización en una única plataforma oficial.",
+                footer_about: "Conectamos tu empresa al futuro de la atención. Automatización, IA e Humanización en una única plataforma oficial.",
                 footer_sol_title: "Soluciones", footer_sol_1: "WhatsApp API Oficial", footer_sol_2: "Tecnología Coex", footer_sol_3: "CRM de Ventas",
                 footer_leg_1: "Términos de Uso", footer_leg_2: "Privacidad", footer_copy: "Todos los derechos reservados.",
                 
